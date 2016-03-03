@@ -3,6 +3,13 @@ var app = express();
 var router = require('./routes/router');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
+var Materialize = require('node-materialize');
+
+
+/********************************************/
+/**********    Styling Framework   **********/
+/********************************************/
+Materialize.inject();
 
 /********************************************/
 /**********    Template Engine     **********/
