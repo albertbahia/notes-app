@@ -3,6 +3,7 @@ var app = express();
 var router = require('./routes/router');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
+var jQuery = require('jQuery');
 var Materialize = require('node-materialize');
 
 
