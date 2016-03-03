@@ -20,6 +20,11 @@ router.get('/', function(req, res) {
 	res.render('index');
 });
 
+/*************   CREATE Routes  *************/
+router.post('/create', function(req, res) {
+	console.log(req.body);
+});
+
 module.exports = router;
 
 
