@@ -24,6 +24,7 @@
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
     "jQuery": "^1.7.4",
+    "jsdom": "^8.1.0",
     "node-materialize": "^1.1.1"
   }
 }
