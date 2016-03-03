@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/albertbahia/notes-app/issues"
   },
-  "homepage": "https://github.com/albertbahia/notes-app#readme"
+  "homepage": "https://github.com/albertbahia/notes-app#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
