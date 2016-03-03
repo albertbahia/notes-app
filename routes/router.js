@@ -17,7 +17,7 @@ router.use(function timeLog(req, res, next) {
 
 /*************    Main  Page   **************/
 router.get('/', function(req, res) {
-	console.log("this works!");
+	res.render('index');
 });
 
 module.exports = router;
