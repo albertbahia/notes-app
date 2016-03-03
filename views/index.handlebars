@@ -1,9 +1,11 @@
 <div class="container">
 	<h1>Notes</h1>
-	<div class="row">
-		<div class="input-field col s6">
-			<input type="text" class="validate notes" id="note_input" name="note" />
-			<label for="note_input">Write a note</label>
+	<form action="/create" method="POST">
+		<div class="row">
+			<div class="input-field col s6">
+				<input type="text" class="validate notes" id="note_input" name="note" />
+				<label for="note_input">Write a note</label>
+			</div>
 		</div>
-	</div>
+	</form>
 </div>
