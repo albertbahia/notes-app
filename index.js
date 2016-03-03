@@ -3,13 +3,7 @@ var app = express();
 var router = require('./routes/router');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
-var Materialize = require('node-materialize');
 
-
-/********************************************/
-/**********    Styling Framework   **********/
-/********************************************/
-Materialize.inject();
 
 /********************************************/
 /**********    Template Engine     **********/
@@ -31,11 +25,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 /**********        Router          **********/
 /********************************************/
 app.use('/', router);
-
-
-
-
-
 
 
 app.listen(PORT, function() {
