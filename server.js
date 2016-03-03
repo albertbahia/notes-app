@@ -3,7 +3,7 @@ var app = express();
 var router = require('./routes/router');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
-
+var models = require('./models')
 
 /********************************************/
 /**********    Template Engine     **********/
@@ -26,7 +26,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 /********************************************/
 app.use('/', router);
 
-
-app.listen(PORT, function() {
-	console.log("Listening on PORT: " + PORT);
+models.sequelize.sync().then(function() {
+	app.listen(PORT, function() {
+		console.log("Listening on PORT: " + PORT);
+	});
 })

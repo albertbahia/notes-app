@@ -2,7 +2,7 @@
   "name": "my-example-notes-app",
   "version": "1.0.0",
   "description": "notes app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +25,7 @@
     "express-handlebars": "^3.0.0",
     "jQuery": "^1.7.4",
     "jsdom": "^8.1.0",
+    "mysql": "^2.10.2",
     "node-materialize": "^1.1.1",
     "sequelize": "^3.19.3"
   }

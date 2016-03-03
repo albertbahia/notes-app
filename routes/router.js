@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var Note = require('../models/note');
 
 
 /********************************************/
@@ -23,6 +24,13 @@ router.get('/', function(req, res) {
 /*************   CREATE Routes  *************/
 router.post('/create', function(req, res) {
 	console.log(req.body);
+	var formInput = req.body;
+
+	Note.sync({force: true}).then(function() {
+		Note.create(formInput);
+		res.redirect('/');
+	});
+
 });
 
 module.exports = router;
